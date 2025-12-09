@@ -72,6 +72,7 @@ changePhotoBtn.addEventListener("click", () => {
   } else {
     avatar.setAttribute("src", "images/samovar2.jpg");
   }
+  console.log(isAltPhoto);
   isAltPhoto = !isAltPhoto;
 });
 
@@ -80,3 +81,4 @@ document.querySelectorAll("button").forEach(btn => {
   btn.addEventListener("mouseover", () => btn.classList.add("hovered"));
   btn.addEventListener("mouseout", () => btn.classList.remove("hovered"));
 });
+
