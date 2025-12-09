@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Профиль Самовар</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="profile-card">
+    <img id="avatar" src="images/SamovarMain.png" alt="Фото профиля">
+    <h2 id="username">Самовар</h2>
+    <p id="bio">Я единсвенный в мире самовар, который проехал всю Россию!</p>
+
+    <label>
+      Новое имя:
+      <input id="nameInput" type="text" placeholder="Введите имя">
+    </label>
+
+    <button id="changeNameBtn" title="Сменить имя на введённое">Изменить имя</button>
+    <p>Лайки: <span id="likes">0</span></p>
+    <button id="likeBtn" title="Поставить лайк">Поставить лайк</button>
+    <button id="resetBtn" title="Сбросить имя и лайки">Сброс</button>
+
+    <button id="toggleBioBtn" title="Скрыть или показать биографию">Скрыть/показать биографию</button>
+    <button id="toggleHobbiesBtn" title="Показать или скрыть хобби">Показать/скрыть хобби</button>
+    <div id="hobbies" class="hidden">
+      <h3>Любимые хобби</h3>
+      <ul>
+        <li>Чаепития</li>
+        <li>Праздники</li>
+        <li>Путешествия</li>
+      </ul>
+    </div>
+
+    <button id="themeToggle" title="Переключить тему">Тема: Светлая</button>
+    <button id="changePhotoBtn" title="Поменять фото профиля">Сменить фото</button>
+  </div>
+</body>
+</html>
